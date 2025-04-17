@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav class="navbar nav nav-tabs navbar-expand-lg bg-mixed rounded">
+        <div>
+          <h3 class="text-white m-4"><i class="bi bi-house-door">  </i>Site Name </h3>
+          
+        </div>
+
+        <!-- button for mobiles --> 
+        <button
+          class="navbar-toggler btn btn-sm"
+          type="button "
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-light rounded"></span>
+        </button>
+        <!-- button for mobiles -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav p-2">
+            <li class="nav-item">
+              <a class="nav-link text-white p-3" href="#">Item1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-3" href="#">Item2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-3" href="#">Item3</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white p-3"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Item4
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-3" href="#">Item5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-3" href="forms.html">Forms</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto p-2">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+  
+
+   
+
+    <!-- Sidebar button -->
+         <div class="d-flex justify-content-center btn-outline-dark rounded ">
+             <div class=" h6 rounded d-flex align-items-center p-2">
+                    <span class="text-dark ">Sidebar Menu</span>
+                    <button class="btn  me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                        <i class="bi bi-arrow-right-square-fill fs-5"></i>
+                </div>
+            </button>
+            </div>
+        </div>
+       
+
+    <!-- image area  carousel-->
+    <div class="d-flex justify-content-center">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide m-2 col-md-6"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://picsum.photos/200/200/?blur"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/200/200/?blur"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/200/200/?blur"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- image area -->
+    <div class="container-fluid m-3">
+        <div class="d-flex justify-content-center">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="https://picsum.photos/350/300" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-4">
+          <img src="https://picsum.photos/350/300" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-4">
+          <img src="https://picsum.photos/350/300" class="img-fluid rounded" />
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Marketing area -->
+    <div class="container-md-fluid m-3">
+        <div class="row">
+            <div class="offset-md-2 col-md-8 h4 bg-mixed-2 rounded text-center"> Marketing Area</div>
+            <div class="offset-md-1 col-md-10 bg-light bg-mixed-2 text-center rounded">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique unde accusantium voluptas consequuntur odit rerum accusamus pariatur, numquam minima sequi, assumenda iste eos, repudiandae cum magni? Sint numquam velit ut?
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Another content with cards boxes -->
+    <div class="container-md-fluid m-2">
+        <div class="row">
+
+            <div class=" offset-md-1 col-md-3 ">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-primary">
+                      <h5 class="card-title">Primary card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-secondary">
+                      <h5 class="card-title">Secondary card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Success card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                  </div>
+                  <div class="card mb-3 " style="width: 18rem;">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-success border border-dark">Go up</a>
+                    </div>
+                  </div>
+                  <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success">Header</div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Success card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">Footer</div>
+                  </div>
+                  <div class="card border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="offset-md-1 col-md-6 bg-light bg-mixed-2 rounded">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero adipisci mollitia repellendus commodi tempora ipsam soluta ad magnam magni molestiae a optio accusamus nulla totam nostrum, aliquid autem aperiam porro.
+                    Content
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae velit hic, architecto perspiciatis, officia soluta incidunt pariatur eveniet optio veniam sapiente atque deleniti laboriosam mollitia praesentium provident nulla! Quo.
+                       <img src="https://picsum.photos/350/300" class="m-3 m-3 float-start rounded">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae velit hic, architecto perspiciatis, officia soluta incidunt pariatur eveniet optio veniam sapiente atque deleniti laboriosam mollitia praesentium provident nulla! Quo.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae velit hic, architecto perspiciatis, officia soluta incidunt pariatur eveniet optio veniam sapiente atque deleniti laboriosam mollitia praesentium provident nulla! Quo.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae velit hic, architecto perspiciatis, officia soluta incidunt pariatur eveniet optio veniam sapiente atque deleniti laboriosam mollitia praesentium provident nulla! Quo.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae velit hic, architecto perspiciatis, officia soluta incidunt pariatur eveniet optio veniam sapiente atque deleniti laboriosam mollitia praesentium provident nulla! Quo.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae velit hic, architecto perspiciatis, officia soluta incidunt pariatur eveniet optio veniam sapiente atque deleniti laboriosam mollitia praesentium provident nulla! Quo.
+                </p>
+            </div>
+</div>   
+    </div>
+    
+    <!-- sidebar menu -->
+    <div >
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+            <div class="offcanvas-header bg-light ">
+                <h6 class="offcanvas-title " id="offcanvas">Menu</h6>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0 bg-mixed-2">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-truncate">
+                            <!-- <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span> -->
+                            <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                            <i class="fs-5 bi-speedometer2"></i><span class="ms-1">Dashboard</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-truncate">
+                            <i class="fs-5 bi-table"></i><span class="ms-1">Orders</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle  text-truncate" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fs-5 bi-bootstrap"></i><span class="ms-1 ">Bootstrap</span>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-truncate">
+                            <i class="fs-5 bi-grid"></i><span class="ms-1 ">Products</span></a>
+                    </li>
+                    <li>
+                        <a href="forms.html" class="nav-link text-truncate">
+                            <i class="fs-5 bi-people"></i><span class="ms-1 ">Customers</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+
+      <!-- Form -->
+<div class="container-fluid">
+    <div class="card bg-mixed h5 rounded">
+            <div class="text-center text-white p-2">
+                <i class="bi bi-person-circle"></i>
+                <span class="ms-2">User Form</span>
+            </div>
+    <form class="form-control container-md-fluid">
+        <div class=" mb-3">
+            <label class="col-md-1">User name</label>
+            <input class="col-md-2 form-control" type="text">
+        </div>
+        <div class=" mb-3">
+            <label class="col-md-1" >Password</label>
+            <input class="col-md-2 form-control" type="password">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Suggestion</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+              <label  class="form-label" >Company Id number</label>
+            <div class="mb-1">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label for="" class="form-check-label text-muted small">Working with us </label>
+            </div>
+            <input class="form-control" type="text" placeholder="Disabled input" disabled>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">CV</label>
+            <input class="form-control form-control-md"  type="file">
+          </div>
+          <div class="mb-3">
+              <label for="exampleDataList" class="form-label">City</label>
+              <input class="form-control" list="datalistOptions" placeholder="Type to search...">
+              <datalist id="datalistOptions">
+                  <option value="Stockholm">
+                      <option value="Malmö">
+                          <option value="Gothenburg">
+                              <option value="Copenhagen">
+                                  <option value="Oslo">
+                                      <option value="Helsinki">
+                                          <option value="linköping">
+                                              <option value="Uppsala">
+                                                  <option value="Lund">
+                                                </datalist>
+                                            </div>
+            <div class="mb-3">
+                <label class="form-label">Country</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Default</option>
+                    <option value="1">Sweden</option>
+                    <option value="2">Danmark</option>
+                    <option value="3">Finland</option>
+                  </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Skills</label>
+                <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value=""  checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                        .Net
+                    </label>
+                </div>
+                <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox"  checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Nodejs
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" >
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Springboot
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+
+                <div >
+                    <label for="" class="form-label">Gender</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Female
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Prefer not to say
+                    </label>
+                </div>
+            </div>  
+        </div>
+        <div class="d-flex justify-content-center ">
+            <button type="submit" class="col-md-4 btn btn-dark m-1">Submit</button>
+            <!-- <button type="reset" class="btn btn-warning m-1 w-25 h-50">Reset</button> -->
+            <button type="button" class="col-md-4 btn btn-danger m-1">Cancel</button>
+        </div>
+    </div>  
+    </form>
+</div>
+
+
+
+<footer class="bg-mixed-2 rounded text-center p-2 mt-5">
+    <div class="container-fluid">
+        <div class="row">
+                <!-- Column 1 -->
+            <div class="col-md-3">
+                <h5>Our Site</h5>
+                <p class="small">
+                    Designed and built with all the love in the world by the Youssef Hikal <i class="bi bi-heart"></i>.
+                </p>
+                <p class="small">Code licensed MIT, docs CC BY 1.0.</p>
+                <p class="small">Currently v1.0.0.</p>       
+            </div>
+            <!-- Column 2 -->
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Examples</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Themes</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Swag Store</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-2">
+                <h5>Guides</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Getting started</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Starter template</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Webpack</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Parcel</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="col-md-2">
+                <h5>Projects</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Bootstrap 5</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Bootstrap 4</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Icons</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">RFS</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">npm starter</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div class="col-md-3">
+                <h5>Community</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Issues</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Discussions</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Corporate sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Open Collective</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Stack Overflow</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    <p class="text-white text-muted m-2">All rights reserved &copy; 2025 by Youssef Hikal <i class="bi bi-airplane"></i></p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient( 50deg,#ffffff,#edf5ff);
+}
+
+div {
+    color: rgb(11, 0, 112);
+}
+
+
+
+.bg-mixed {
+    background: linear-gradient(180deg,#000000,#004896);
+}
+
+.bg-mixed-2 {
+    background: linear-gradient(50deg, #ffffff, #e9efff); 
+    color: #0a0a0a; 
+}
+
+
+.carousel-inner img {
+    
+    border-radius: 10px; 
+}
+
+#menu li a {
+    color: #000f53;
+}
+
+@media (max-width: 768px) {
+    .offcanvas-start {
+      width: 50% !important;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .offcanvas-start {
+      width: 25% !important;
+    }
+  }

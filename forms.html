@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <title>Forms</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar nav nav-tabs navbar-expand-lg bg-mixed rounded">
+          <div>
+            <!-- <h3 class="text-white m-4"> </i>Site Name</h3> -->
+            </div>       
+
+        <div class="d-flex"  id="navbarNav">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link text-white p-3 ms-3 " href="index.html"> <i class="bi bi-house-door"> </i>Home</a>
+              </li>
+            </ul>
+          </div>
+              <form class="d-flex ms-auto p-2">
+                  <input
+                  class="form-control me-2 "
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  />
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+        </nav>
+      </header>
+
+<!-- fixed width -->
+<div class="container-fluid">
+    <div class="card bg-mixed h5 rounded mx-auto my-4" style="max-width: 600px; border: 2px solid black;">
+        <div class="text-center text-white p-3 bg-dark rounded-top">
+            <i class="bi bi-person-circle"></i>
+            <span class="ms-2">User Form for mobile phones</span>
+        </div>
+        <form class="form-control border-0 p-4">
+            <div class="mb-3">
+                <label class="form-label">User name</label>
+                <input class="form-control" type="text" placeholder="Enter your username">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input class="form-control" type="password" placeholder="Enter your password">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Suggestion</label>
+                <textarea class="form-control" rows="3" placeholder="Enter your suggestion"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Company Id number</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input me-2">
+                    <label class="form-check-label text-muted small">Working with us</label>
+                </div>
+                <input class="form-control mt-2" type="text" placeholder="Disabled input" disabled>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">CV</label>
+                <input class="form-control" type="file">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">City</label>
+                <input class="form-control" list="datalistOptions" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                    <option value="Stockholm">
+                    <option value="Malmö">
+                    <option value="Gothenburg">
+                    <option value="Copenhagen">
+                    <option value="Oslo">
+                    <option value="Helsinki">
+                    <option value="Linköping">
+                    <option value="Uppsala">
+                    <option value="Lund">
+                </datalist>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Country</label>
+                <select class="form-select">
+                    <option selected>Default</option>
+                    <option value="1">Sweden</option>
+                    <option value="2">Denmark</option>
+                    <option value="3">Finland</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Skills</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" checked>
+                    <label class="form-check-label">.Net</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" checked>
+                    <label class="form-check-label">Node.js</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">Spring Boot</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="preferNotToSay" checked>
+                    <label class="form-check-label" for="preferNotToSay">Prefer not to say</label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-dark m-1">Submit</button>
+                <button type="button" class="btn btn-danger m-1">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Dynmaic adjustbale table -->
+<div class="container-fluid">
+    <div class="card bg-mixed h5 rounded dynamic-width">
+        <div class="text-center text-white p-3 bg-mixed rounded-top">
+            <i class="bi bi-person-circle"></i>
+            <span class="ms-2">Responsive form Form</span>
+        </div>
+        <form class="form-control border-0 p-4">
+            <div class="row g-3 mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+              <div class="col-auto mb-3">
+                <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                <div class="input-group">
+                  <div class="input-group-text">@</div>
+                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                </div>
+              </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input class="form-control" type="password" placeholder="Enter your password">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Email</label>
+                <input type="email" placeholder="example@email.com" class="form-control">
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-dark m-1">Submit</button>
+                <button type="button" class="btn btn-danger m-1">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--  
+<div class="container-fluid border border-2 border-light rounded my-4">
+    <div class="card bg-success h5 rounded mx-auto my-4 dynamic-width">
+        <div class="text-center text-white p-3 bg-success rounded-top">
+            <i class="bi bi-person-circle"></i>
+            <span class="ms-2">Form Validation</span>
+        </div>
+
+    
+    <form action="" class="form-control">
+        <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationServer01" class="form-label">First name</label>
+              <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationServer02" class="form-label">Last name</label>
+              <input type="text" class="form-control " id="validationServer02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationServerUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServer03" class="form-label">City</label>
+              <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+              <div id="validationServer03Feedback" class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationServer04" class="form-label">State</label>
+              <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div id="validationServer04Feedback" class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationServer05" class="form-label">Zip</label>
+              <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+              <div id="validationServer05Feedback" class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-success mb-3" type="submit">Submit form</button>
+            </div>
+          </form>
+    </form>
+</div>
+</div>
+ -->
+
+ 
+<footer class="bg-mixed-2 rounded text-center p-2 mt-5">
+    <div class="container-fluid">
+        <div class="row">
+                <!-- Column 1 -->
+            <div class="col-md-3">
+                <h5>Our Site</h5>
+                <p class="small">
+                    Designed and built with all the love in the world by the Youssef Hikal <i class="bi bi-heart"></i>.
+                </p>
+                <p class="small">Code licensed MIT, docs CC BY 1.0.</p>
+                <p class="small">Currently v1.0.0.</p>       
+            </div>
+            <!-- Column 2 -->
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Examples</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Themes</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Swag Store</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-2">
+                <h5>Guides</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Getting started</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Starter template</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Webpack</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Parcel</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="col-md-2">
+                <h5>Projects</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Bootstrap 5</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Bootstrap 4</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Icons</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">RFS</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">npm starter</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div class="col-md-3">
+                <h5>Community</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Issues</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Discussions</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Corporate sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Open Collective</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 text-dark" href="#">Stack Overflow</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    <p class="text-white text-muted m-2">All rights reserved &copy; 2025 by Youssef Hikal <i class="bi bi-airplane"></i></p>
+    </div>
+</footer>
+</body>
+</html>
